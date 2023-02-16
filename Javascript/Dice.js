@@ -1,0 +1,7 @@
+var Dice = function() {
+
+    
+
+
+}
+

@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../IMG/woodtable.jpg");
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
