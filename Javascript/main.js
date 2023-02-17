@@ -1,10 +1,4 @@
-const xParagraph = document.createElement("p");
-const yParagraph = document.createElement("p");
-const zParagraph = document.createElement("p");
 
-const alphaParagraph = document.createElement("p");
-const betaParagraph = document.createElement("p");
-const gammaParagraph = document.createElement("p");
 
 
 const log = this.document.createElement("p");
@@ -16,22 +10,15 @@ const log = this.document.createElement("p");
 
 
 
-var shaking = false;
+
 
 window.addEventListener("devicemotion", function (event) {
      
-        const alpha = event.rotationRate.alpha;
-        const beta = event.rotationRate.beta;
+        var shaking = false;
+
+        const gammaParagraph = document.createElement("p");
         const gamma = event.rotationRate.gamma;
-
-        alphaParagraph.innerHTML = "Alpha: " + alpha.toFixed(2);
-        betaParagraph.innerHTML = "Beta: " + beta.toFixed(2);
         gammaParagraph.innerHTML = "Gamma: " + gamma.toFixed(2);
-
-        if(gamma != null){
-            var hej =document.getElementsByTagName("button");
-            hej.remove();
-        }
 
         
         if (gamma > 20 || gamma < -20) {
