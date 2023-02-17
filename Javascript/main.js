@@ -12,9 +12,6 @@ const log = this.document.createElement("p");
  function init() {
     var permissionBtn =Landingpage.createButton("tryck på mig"); 
      permissionBtn.addEventListener("click", Permission.givePermission);
-
-    
-
 }
 
 
@@ -30,6 +27,11 @@ window.addEventListener("devicemotion", function (event) {
         alphaParagraph.innerHTML = "Alpha: " + alpha.toFixed(2);
         betaParagraph.innerHTML = "Beta: " + beta.toFixed(2);
         gammaParagraph.innerHTML = "Gamma: " + gamma.toFixed(2);
+
+        if(gamma != null){
+            var hej =document.getElementsByTagName("button");
+            hej.remove();
+        }
 
         
         if (gamma > 20 || gamma < -20) {
