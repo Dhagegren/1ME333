@@ -4,7 +4,10 @@ Static class used to give permission from the user that the devices motionevents
 var Permission = {
 
 
-Permission:givePermission = function(){
+
+
+}
+Permission.givePermission = function(){
     if (typeof DeviceMotionEvent.requestPermission === 'function') {
         DeviceMotionEvent.requestPermission().then(response => {
             if (response === 'granted') {
@@ -13,5 +16,3 @@ Permission:givePermission = function(){
         });
     }
 }  
-
-}

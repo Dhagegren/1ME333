@@ -10,10 +10,14 @@ const gammaParagraph = document.createElement("p");
 const log = this.document.createElement("p");
 
  function init() {
-    var button = document.getElementById("btn");    
-     button.addEventListener("click", Permission.givePermission);
+    var permissionBtn =Landingpage.createButton("tryck på mig"); 
+     permissionBtn.addEventListener("click", Permission.givePermission);
+
+    
 
 }
+
+
 
 var shaking = false;
 
@@ -58,6 +62,8 @@ window.addEventListener("devicemotion", function (event) {
 
 
     });
+
+    window.addEventListener("load", init);
 
 
 
