@@ -1,8 +1,8 @@
-function Landingpage() {
+function createButton() {
     // static class constructor
   }
   
-  Landingpage.createButton = function(text) {
+  createButton.createButton = function(text) {
     var button = document.createElement("button");
     button.textContent = text;
     document.body.appendChild(button);
