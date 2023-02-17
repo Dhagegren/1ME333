@@ -13,11 +13,12 @@ Permission.givePermission = function(){
                 return permissionGranted;
             }
         });
+        if(permissionGranted){
+            var btn = document.getElementsByTagName("button");
+            btn.remove();
+          }
     }
-    if(permissionGranted){
-        var btn = document.getElementsByTagName("button");
-        btn.remove();
-      }
+  
 }  
 
 Permission.givePermission = function(){
