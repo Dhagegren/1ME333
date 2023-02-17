@@ -9,25 +9,15 @@ const gammaParagraph = document.createElement("p");
 
 const log = this.document.createElement("p");
 
-function init() {
-    var button = document.getElementById("btn");
-    button.addEventListener("click", givePermission);
+ function init() {
+    var button = document.getElementById("btn");    
+     button.addEventListener("click", Permission.givePermission);
 
 }
 
 var shaking = false;
 
-
-function givePermission() {
-    if (typeof DeviceMotionEvent.requestPermission === 'function') {
-        DeviceMotionEvent.requestPermission().then(response => {
-            if (response === 'granted') {
-                window.dispatchEvent(new DeviceMotionEvent('devicemotion'));
-            }
-        });
-    }
-
-    window.addEventListener("devicemotion", function (event) {
+window.addEventListener("devicemotion", function (event) {
      
         const alpha = event.rotationRate.alpha;
         const beta = event.rotationRate.beta;
@@ -68,25 +58,7 @@ function givePermission() {
 
 
     });
-}
 
 
 
-//kod för dator funkar inte för att läsa av skakning, det är bara orientering av mobilen.
-window.addEventListener("deviceorientation", function(event) {
 
-    var alphaPc = event.alpha;
-    var betaPc = event.beta;
-    var gammaPc = event.gamma;
-
-    xParagraph.innerHTML = "Alpha: "+ alphaPc.toFixed(1);
-    yParagraph.innerHTML = "Beta: " + betaPc.toFixed(1);
-    zParagraph.innerHTML = "Gamma: " +gammaPc.toFixed(1);
-
-
-    document.body.appendChild(xParagraph);
-    document.body.appendChild(yParagraph);
-    document.body.appendChild(zParagraph);
-  });
-
-window.addEventListener("load", init);
