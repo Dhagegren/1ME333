@@ -14,11 +14,12 @@ Permission.givePermission = function(){
             }
         });
     }
+    if(permissionGranted){
+        var btn = document.getElementsByTagName("button");
+        btn.remove();
+      }
 }  
 
 Permission.givePermission = function(){
-    if(permissionGranted){
-      var btn = document.getElementsByTagName("button");
-      btn.remove();
-    }
+   
 }
