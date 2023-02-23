@@ -1,8 +1,8 @@
-function createButton() {
+function CreateButton() {
     // static class constructor
   }
   
-  createButton.createButton = function(text) {
+  CreateButton.createButton = function(text) {
     var button = document.createElement("button");
     button.textContent = text;
     document.body.appendChild(button);

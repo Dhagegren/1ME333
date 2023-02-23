@@ -4,7 +4,7 @@
 const log = this.document.createElement("p");
 
  function init() {
-    var permissionBtn =createButton.createButton("tryck på mig"); 
+    var permissionBtn =CreateButton.createButton("tryck på mig"); 
      permissionBtn.addEventListener("click", Permission.givePermission);
 }
 
@@ -40,13 +40,6 @@ window.addEventListener("devicemotion", function (event) {
 
             }
         }, 1500);
-
-        document.body.appendChild(alphaParagraph);
-        document.body.appendChild(betaParagraph);
-        document.body.appendChild(gammaParagraph);
-
-
-
     });
 
     window.addEventListener("load", init);
