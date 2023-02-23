@@ -18,7 +18,7 @@ window.addEventListener("devicemotion", function (event) {
         var shaking = false;
 
         const gamma = event.rotationRate.gamma;
-        log2.innerHTML = gamma;
+        log2.innerHTML = gamma.toFixed(2);
         document.body.appendChild(log2);
 
 
