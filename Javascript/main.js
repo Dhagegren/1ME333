@@ -2,6 +2,7 @@
 
 
 const log = this.document.createElement("p");
+const log2 = this.document.createElement("p"):
 
  function init() {
     var permissionBtn =CreateButton.createButton("tryck på mig"); 
@@ -17,6 +18,9 @@ window.addEventListener("devicemotion", function (event) {
         var shaking = false;
 
         const gamma = event.rotationRate.gamma;
+        log2.innerHTML = gamma;
+        document.body.appendChild(log2);
+
 
         if (gamma > 20 || gamma < -20) {
           shaking= true;
