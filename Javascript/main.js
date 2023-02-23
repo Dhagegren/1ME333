@@ -22,7 +22,7 @@ window.addEventListener("devicemotion", function (event) {
         document.body.appendChild(log2);
 
 
-        if (gamma > 20 || gamma < -20) {
+        if (gamma > 40 || gamma < -40) {
           shaking= true;
         }
 
