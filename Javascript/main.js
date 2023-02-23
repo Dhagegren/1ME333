@@ -2,7 +2,7 @@
 
 
 const log = this.document.createElement("p");
-const log2 = this.document.createElement("p"):
+const log2 = this.document.createElement("p");
 
  function init() {
     var permissionBtn =CreateButton.createButton("tryck på mig"); 
