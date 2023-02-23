@@ -43,7 +43,7 @@ window.addEventListener("devicemotion", function (event) {
                 document.body.appendChild(log);
 
             }
-        }, 1500);
+        }, 600);
     });
 
     window.addEventListener("load", init);
