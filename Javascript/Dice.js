@@ -1,6 +1,7 @@
 var Dice = function(sides) {
 
-    this.sides = sides ||6;
+    this.sides = sides;
+    
 
 }
 
