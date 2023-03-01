@@ -2,7 +2,7 @@
 // Nån bild på en tärning som kanske snurrar 
 // en start knapp för eventlyssnare
 
-function StartPage(buttonText) {
+var StartPage = function(buttonText) {
 
     //var button = document.createElement("button");
     var button = CreateButton.createButton(buttonText)
