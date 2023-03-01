@@ -14,7 +14,7 @@ Permission.givePermission = function(){
 
                 var hej = document.createElement("p");
                 hej.textContent = "hejsan";
-                body.appendChild(hej);
+                document.body.appendChild(hej);
                 var choose = new ChooseDicePage(); 
 
 
