@@ -15,7 +15,9 @@ function ChooseDicePage() {
       // Event listener for the button
       button.addEventListener("click", function(event) {
         var numDice = parseInt(event.target.textContent);
-        console.log("Throwing " + numDice + " dice");
+        for(i=0; i<numDice; i++){
+          var dice = new Dice();
+        }
       });
     }
   }
