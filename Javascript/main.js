@@ -2,10 +2,7 @@
 
 
  function init() {
-    // var permissionBtn =CreateButton.createButton("tryck på mig"); 
-    //  permissionBtn.addEventListener("click", Permission.givePermission);
-
-    var startpage = new StartPage("tryck på mig");
+     var startpage = new StartPage("tryck på mig");
 }
 
 

@@ -12,7 +12,7 @@ Permission.givePermission = function(){
                 window.dispatchEvent(new DeviceMotionEvent('devicemotion'));
                 
 
-                //var choose = new ChooseDicePage; 
+                var choose = new ChooseDicePage; 
 
 
             }
