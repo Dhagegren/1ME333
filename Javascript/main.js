@@ -4,7 +4,8 @@
  function init() {
  
 
-    var startpage = new StartPage("tryck på mig")
+   // var startpage = new StartPage("tryck på mig");
+   var choose = new ChooseDicePage(); 
 }
 
 

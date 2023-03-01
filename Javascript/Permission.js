@@ -11,12 +11,7 @@ Permission.givePermission = function(){
             if (response === 'granted') {
                 window.dispatchEvent(new DeviceMotionEvent('devicemotion'));
                 
-
-                var hej = document.createElement("p");
-                hej.textContent = "hejsan";
-                document.body.appendChild(hej);
-                var choose = new ChooseDicePage(); 
-
+    
 
             }
         });
