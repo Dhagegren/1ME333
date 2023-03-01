@@ -12,6 +12,9 @@ Permission.givePermission = function(){
                 window.dispatchEvent(new DeviceMotionEvent('devicemotion'));
                 
 
+                var hej = document.createElement("p");
+                hej.textContent = "hejsan";
+                body.appendChild(hej);
                 var choose = new ChooseDicePage(); 
 
 
