@@ -2,45 +2,47 @@
 
 
  function init() {
-     var startpage = new StartPage("tryck på mig");
+ 
+
+    var startpage = new StartPage("tryck på mig")
 }
 
 
 
 
 
-// window.addEventListener("devicemotion", function (event) {
+window.addEventListener("devicemotion", function (event) {
      
-//         var shaking = false;
+        var shaking = false;
 
-//         const gamma = event.rotationRate.gamma;
-//         log2.innerHTML = gamma.toFixed(2);
-//         document.body.appendChild(log2);
-
-
-//         if (gamma > 20 || gamma < -20) {
-//           shaking= true;
-//         }
-
-//         else {
-//           shaking = false;
-//         }
+        const gamma = event.rotationRate.gamma;
+        log2.innerHTML = gamma.toFixed(2);
+        document.body.appendChild(log2);
 
 
-//         let interval = setInterval(function(){
+        if (gamma > 20 || gamma < -20) {
+          shaking= true;
+        }
 
-//             if (shaking){
-//                 log.innerHTML = "jag skakar";
-//                 document.body.appendChild(log);
+        else {
+          shaking = false;
+        }
 
-//             }
-//             else {
-//                 log.innerHTML = "";
-//                 document.body.appendChild(log);
 
-//             }
-//         }, 1500);
-//     });
+        let interval = setInterval(function(){
+
+            if (shaking){
+                log.innerHTML = "jag skakar";
+                document.body.appendChild(log);
+
+            }
+            else {
+                log.innerHTML = "";
+                document.body.appendChild(log);
+
+            }
+        }, 1500);
+    });
 
     window.addEventListener("load", init);
 
