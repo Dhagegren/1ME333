@@ -24,10 +24,10 @@ function ChooseDicePage() {
         document.body.appendChild(hej);
 
        
-
+        var dice = new Dice();
 
         for(i=0; i<numDice; i++){
-          var dice = new Dice();
+         
         }
       });
     }
