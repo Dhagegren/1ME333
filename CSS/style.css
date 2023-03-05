@@ -15,6 +15,7 @@ h1 {
     transform: 1s;
     width: 102.5px;
     height: 102px;
+    transition: transform 1.5s ease-in-out;
   }
 
 .dice{
@@ -78,7 +79,7 @@ h1 {
 
 
 
-    .show-1 {
+      .show-1 {
         transform: rotateX(720deg) rotateZ(-720deg); }
       
       .show-6 {

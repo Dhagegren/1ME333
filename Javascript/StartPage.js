@@ -4,7 +4,7 @@
 
 var StartPage = function(buttonText) {
 
-    var button = CreateButton.createButton(buttonText)
+    var button = new CreateButton(buttonText)
     button.addEventListener("click", Permission.givePermission);
   }
 

@@ -3,6 +3,10 @@
 
  function init() {
    var startpage = new StartPage("tryck på mig");
+
+
+
+
 }
 
 
@@ -27,7 +31,7 @@ window.addEventListener("devicemotion", function (event) {
         let interval = setInterval(function(){
 
             if (shaking){
-              
+
                
 
             }
