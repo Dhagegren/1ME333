@@ -17,7 +17,7 @@ window.addEventListener("devicemotion", function (event) {
 
     const gamma = event.rotationRate.gamma;
 
-    if (gamma > 20 || gamma < -20) {
+    if (gamma > 10 || gamma < -10) {
       shaking= true;
     }
 
@@ -33,7 +33,7 @@ window.addEventListener("devicemotion", function (event) {
            hej();
 
         }
-    }, 500);
+    }, 100);
 });
 
  var btn = document.createElement("button");
