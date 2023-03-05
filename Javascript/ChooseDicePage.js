@@ -20,16 +20,8 @@ function ChooseDicePage() {
 
         var numDice = parseInt(event.target.textContent);
 
+        //skapar en dicePage där tärningarna kommer att vara
         var dicepage = new DicePage(numDice);
-
-        // for(i=0; i<numDice; i++){
-        //   var dice = new Dice(); 
-        //   diceArr.push(dice);
-        //   dice.roll();
-        // }
-       
-    
-       
 
       });
     }
