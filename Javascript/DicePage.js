@@ -10,6 +10,12 @@ for( var i=0; i<value; i++){
     dice.roll();
 }
 
+function hej(){
+    console.log(DiceArr.length);
+for(i=0; i<DiceArr.length; i++){
+    DiceArr[i].roll();
+
+}
 
 window.addEventListener("devicemotion", function (event) {
      
@@ -27,12 +33,7 @@ if(acceleration> threshhold){
  document.body.appendChild(btn);
  btn.addEventListener("click", hej);
 
-function hej(){
-    console.log(DiceArr.length);
-for(i=0; i<DiceArr.length; i++){
-    DiceArr[i].roll();
 
-}
 }
 
 }
