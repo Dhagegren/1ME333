@@ -33,7 +33,7 @@ window.addEventListener("devicemotion", function (event) {
            hej();
 
         }
-    }, 1500);
+    }, 500);
 });
 
  var btn = document.createElement("button");
