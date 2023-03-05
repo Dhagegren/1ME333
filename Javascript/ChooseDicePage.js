@@ -20,7 +20,7 @@ function ChooseDicePage() {
         var numDice = parseInt(event.target.textContent);
 
         var hej = document.createElement("p");
-        hej.textContent ="hej" + numDice;
+        hej.textContent ="tja" + numDice;
         document.body.appendChild(hej);
 
        
