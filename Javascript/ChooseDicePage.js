@@ -8,10 +8,10 @@ function ChooseDicePage() {
   
     // Create buttons for each number of dice
     for (var i = 1; i <= 6; i++) {
-      CreateButton.createButton(i);
-      // var button = document.createElement("button");
-      // button.textContent = i.toString();
-      // document.body.appendChild(button);
+      //CreateButton.createButton(i);
+       var button = document.createElement("button");
+       button.textContent = i.toString();
+       document.body.appendChild(button);
   
       // Event listener for the button
       button.addEventListener("click", function(event) {
