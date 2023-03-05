@@ -15,11 +15,13 @@ function ChooseDicePage() {
   
       // Event listener for the button
       button.addEventListener("click", function(event) {
-        var hej = document.createElement("p");
-        hej.innerHTML("hej");
-        document.body.appendChild(hej);
         
+
         var numDice = parseInt(event.target.textContent);
+
+        var hej = document.createElement("p");
+        hej.textContent ="hej" + numDice;
+        document.body.appendChild(hej);
 
        
 
