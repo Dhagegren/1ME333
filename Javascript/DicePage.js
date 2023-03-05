@@ -18,16 +18,12 @@ const {x,y,z} = event.acceleration;
 const acceleration = Math.sqrt(x**2 + y**2 + z**2);
 
 if(acceleration> threshhold){
-    hej();
+    diceRoll();
 }
 });
 
-//  var btn = document.createElement("button");
-//  btn.textContent = "tryck på mig";
-//  document.body.appendChild(btn);
-//  btn.addEventListener("click", hej);
 
-function hej(){
+function diceRoll(){
     console.log(DiceArr.length);
 for(i=0; i<DiceArr.length; i++){
     DiceArr[i].roll();
