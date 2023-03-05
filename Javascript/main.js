@@ -5,8 +5,6 @@
    var startpage = new StartPage("tryck på mig");
 
   }
-
-  
 window.addEventListener("load", init);
 
     
