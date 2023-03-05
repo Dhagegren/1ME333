@@ -7,6 +7,7 @@ var StartPage = function(buttonText) {
 
     var button = new CreateButton(buttonText)
     button.addEventListener("click", Permission.givePermission);
+    button.style.display = 'none';
   }
 
   //var start = new Startpage("Start");
