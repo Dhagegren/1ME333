@@ -2,22 +2,20 @@
 // Kankse välja färg på tärningar
 
 function ChooseDicePage() {
-    var message = document.createElement("h2");
-    message.textContent = "Hur många tärningar vill du kasta?";
-    document.body.appendChild(message);
+
+    // var message = document.createElement("h2");
+    // message.textContent = "Hur många tärningar vill du kasta?";
+    // document.body.appendChild(message);
+    var message = CreateHeader("Hur många tärningar vill du kasta?");
+    
 
 
-    var diceArr = [];
-  
+
     // Create buttons for each number of dice
     for (var i = 1; i <= 6; i++) {
        var button = CreateButton(i);
-        //var button = document.createElement("button");
-       // button.textContent = i.toString();
-      //  document.body.appendChild(button);
-    
-  
-      // Event listener for the button
+     
+      // Eventlystnare på knappen
       button.addEventListener("click", function(event) {
 
         var numDice = parseInt(event.target.textContent);
