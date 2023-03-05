@@ -11,8 +11,6 @@ Permission.givePermission = function(){
         DeviceMotionEvent.requestPermission().then(response => {
             if (response === 'granted') {
                 var choose = new ChooseDicePage(); 
-                var button = document.getElementsByTagName("button");
-                button.style.display = 'none';
                 window.dispatchEvent(new DeviceMotionEvent('devicemotion'));
             }
         });
