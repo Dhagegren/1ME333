@@ -16,6 +16,10 @@ function ChooseDicePage() {
       // Event listener for the button
       button.addEventListener("click", function(event) {
         var numDice = parseInt(event.target.textContent);
+
+        var hej = document.createElement("p");
+        hej.innerHTML("hej" +numDice);
+        document.body.appendChild(hej);
         for(i=0; i<numDice; i++){
           var dice = new Dice();
         }
