@@ -16,29 +16,29 @@ h1 {
     display: block;
     transform-style: preserve-3d;
     transform: 1s;
-    background			: url("../IMG/dices.png") no-repeat;
+    background			: url("../IMG/Dices.svg") no-repeat;
 }
 
 .one{
     background-position	: 0 0;
 }
 .two{
-    background-position	: 0 -25px;
+    background-position	: 0 -100px;
 }
 .three{
-    background-position	: 0 -50px;
+    background-position	: 0 -200px;
 }
 
 .four{
-    background-position	: 0 -75px; 
+    background-position	: 0 -300px; 
 }
 
 .five{
-    background-position	: 0 -100px;
+    background-position	: 0 -400px;
 }
 
 .six{
-    background-position	: 0 -125px; 
+    background-position	: 0 -500px; 
 }
 
 
