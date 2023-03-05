@@ -13,27 +13,13 @@ for( var i=0; i<value; i++){
 
 window.addEventListener("devicemotion", function (event) {
      
-    var shaking = false;
+const threshhold = 15;
+const {x,y,z} = event.acceleration;
+const acceleration = Math.sqrt(x**2 + y**2 + z**2);
 
-    const gamma = event.rotationRate.gamma;
-
-    if (gamma > 10 || gamma < -10) {
-      shaking= true;
-    }
-
-    else {
-      shaking = false;
-    }
-
-
-    let interval = setInterval(function(){
-
-        if (shaking){
-
-           hej();
-
-        }
-    }, 100);
+if(acceleration> threshhold){
+    hej;
+}
 });
 
  var btn = document.createElement("button");
