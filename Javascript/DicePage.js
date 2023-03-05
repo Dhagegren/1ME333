@@ -18,7 +18,7 @@ const {x,y,z} = event.acceleration;
 const acceleration = Math.sqrt(x**2 + y**2 + z**2);
 
 if(acceleration> threshhold){
-    hej;
+    hej();
 }
 });
 
