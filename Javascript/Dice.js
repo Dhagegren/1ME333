@@ -1,4 +1,4 @@
-var Dice = function(sides) {
+var Dice = function() {
 
   
     // colors = colors || #FFFFF //vit

@@ -23,8 +23,7 @@ function ChooseDicePage() {
         hej.textContent ="tja" + numDice;
         document.body.appendChild(hej);
 
-       
-
+      
         for(i=0; i<numDice; i++){
           var dice = new Dice();
           console.log(dice);
