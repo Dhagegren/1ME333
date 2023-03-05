@@ -7,26 +7,11 @@
    viewBox="0 0 27.283836 159.90092"
    version="1.1"
    id="svg531"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview533"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
-     showgrid="false" />
   <defs
      id="defs528" />
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-90.755991,-54.423083)">
     <rect
@@ -38,10 +23,7 @@
        rx="1.5478125"
        ry="1.5478125"
        id="rect124"
-       style="fill:#ffffff;stroke:#1d1d1b;stroke-width:0.79375px;stroke-miterlimit:10"
-       inkscape:export-filename="diceweqe.svg"
-       inkscape:export-xdpi="93.095398"
-       inkscape:export-ydpi="93.095398" />
+       style="fill:#ffffff;stroke:#1d1d1b;stroke-width:0.79375px;stroke-miterlimit:10" />
     <circle
        class="cls-2"
        cx="104.38203"

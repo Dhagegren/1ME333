@@ -9,18 +9,23 @@ h1 {
     text-align: center;
   }
 
-
-.dice{
-    width: 100;
-    height: 100px;
-    display: block;
+  .diceWrapper{
+    margin: 5px;
     transform-style: preserve-3d;
     transform: 1s;
+    width: 102.5px;
+    height: 102px;
+  }
+
+.dice{
+    width: 100%;
+    height: 100%;
+    display: block;
     background			: url("../IMG/dices.svg") no-repeat;
 }
 
 .one{
-    background-position	: 0 0;
+    background-position	: 0 0x;
 }
 .two{
     background-position	: 0 -100px;
@@ -46,15 +51,13 @@ h1 {
     position: absolute;
     background-color: #ffF;
     border-radius:5px;
-    width: 50;
-    height: 50;
+    width: 100;
+    height: 100;
     border: 1px solid #e5e5e5;
-    text-align: center;
-    line-height: 2em;
   }
 
 
-.side:nth-child(1) {
+  .side:nth-child(1) {
     transform: translateZ(3.1em); }
   
   .side:nth-child(6) {
@@ -71,6 +74,28 @@ h1 {
   
   .side:nth-child(2) {
     transform: rotateY(-180deg) translateZ(3.1em); }
+
+
+
+
+    .show-1 {
+        transform: rotateX(720deg) rotateZ(-720deg); }
+      
+      .show-6 {
+        transform: rotateX(-900deg) rotateZ(1080deg); }
+      
+      .show-3 {
+        transform: rotateY(-450deg) rotateZ(-1440deg); }
+      
+      .show-4 {
+        transform: rotateY(810deg) rotateZ(720deg); }
+      
+      .show-5 {
+        transform: rotateX(-810deg) rotateZ(-1080deg); }
+      
+      .show-2 {
+        transform: rotateX(450deg) rotateZ(-720deg); }
+      
 
 
 

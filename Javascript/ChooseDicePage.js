@@ -15,14 +15,16 @@ function ChooseDicePage() {
   
       // Event listener for the button
       button.addEventListener("click", function(event) {
-        
+       
 
         var numDice = parseInt(event.target.textContent);
 
         for(i=0; i<numDice; i++){
-          var dice = new Dice();
-          console.log(dice);
+          var dice = new Dice(); 
+          dice.roll();
         }
+
+  
       });
     }
   }

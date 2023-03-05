@@ -5,6 +5,7 @@ var Dice = function() {
     //dotcolors = dotcolors ||#FFFF // svart
 
     this.diceWrapper = document.createElement("div");
+    this.diceWrapper.setAttribute("class", "diceWrapper show-1");
     document.body.appendChild(this.diceWrapper);
 
 
@@ -36,7 +37,15 @@ var Dice = function() {
 }
 
 Dice.prototype.roll = function(){
-    return Math.floor(Math.random()* this.sides)+1;
+   var value =  Math.ceil(Math.random()* 6);
+   for(var i = 0; i<6; i++){
+    console.log(value + " " + i);
+    this.diceWrapper.classList.remove("show-" + i);
+    if(value === i){
+        this.diceWrapper.classList.add("show-"+ i);
+    }
+   }
+      
 };
 
 

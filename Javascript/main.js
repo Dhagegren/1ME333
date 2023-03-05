@@ -27,6 +27,7 @@ window.addEventListener("devicemotion", function (event) {
         let interval = setInterval(function(){
 
             if (shaking){
+              
                
 
             }
