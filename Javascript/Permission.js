@@ -12,7 +12,7 @@ Permission.givePermission = function(){
             if (response === 'granted') {
                 var choose = new ChooseDicePage(); 
                 var button = document.getElementsByTagName("button");
-                button.style.display = "none";
+                button.style.display = 'none';
                 window.dispatchEvent(new DeviceMotionEvent('devicemotion'));
             }
         });
