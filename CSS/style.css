@@ -11,8 +11,8 @@ h1 {
 
 
 .dice{
-    width: 25;
-    height: 25;
+    width: 25px;
+    height: 25px;
     display: block;
     transform-style: preserve-3d;
     transform: 1s;
