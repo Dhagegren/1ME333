@@ -10,34 +10,47 @@ h1 {
   }
 
 
-#dice{
+.dice{
     width: 50px;
     height: 50px;
+    display: block;
+    transform-style: preserve-3d;
+    transform: 1s;
 }
 
-#one{
-    background-image: url("..IMG\DicesidesIMG\dice1.svg");
+.one{
+    background-image: url("../IMG/dice1.svg");
+}
+.two{
+    background-image: url("../IMG/dice2.svg");
+}
+.three{
+    background-image: url("../IMG/dice3.svg");
 }
 
-#two{
-    background-image: url("..IMG\DicesidesIMG\dice2.svg");
+.four{
+    background-image: url("../IMG/dice4.svg");
 }
 
-#three{
-    background-image: url("..IMG\DicesidesIMG\dice3.svg");
+.five{
+    background-image: url("../IMG/dice5.svg"); 
 }
 
-#four{
-    background-image: url("..IMG\DicesidesIMG\dice4.svg");
+.six{
+    background-image: url("../IMG/dice6.svg");   
 }
 
-#five{
-    background-image: url("..IMG\DicesidesIMG\dice5.svg");
-}
 
-#six{
-    background-image: url("..IMG\DicesidesIMG\dice6.svg");
-}
+.side {
+    position: absolute;
+    background-color: #ffF;
+    border-radius:5px;
+    width: 50;
+    height: 50;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    line-height: 2em;
+  }
 
 
 .side:nth-child(1) {

@@ -1,7 +1,6 @@
 var Dice = function(sides) {
 
-    this.sides = sides;
-
+  
     // colors = colors || #FFFFF //vit
     //dotcolors = dotcolors ||#FFFF // svart
 
