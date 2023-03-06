@@ -5,8 +5,9 @@
 
 var StartPage = function(buttonText) {
 
-    var button = new CreateButton(buttonText)
-    button.addEventListener("click", Permission.givePermission);
+    this.button = new CreateButton(buttonText)
+    this.button.setAttribute("id", "startBtn");
+    this.button.addEventListener("click", Permission.givePermission);
   }
 
   //var start = new Startpage("Start");
