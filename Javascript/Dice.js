@@ -42,8 +42,6 @@ var Dice = function() {
           }
         }
       }.bind(this);
-     
-
 }
 
 
