@@ -5,7 +5,7 @@ var DicePage = function(value){
 
 
     for( var i=0; i<value; i++){
-        vardice = new Dice();
+        var dice = new Dice();
         DiceArr.push(dice);
         dice.roll(); 
     }
