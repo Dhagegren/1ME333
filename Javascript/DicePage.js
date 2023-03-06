@@ -3,10 +3,6 @@ var DicePage = function(value){
 
     var DiceArr = [];
 
-    for(i=0; i<DiceArr.length; i++){
-        DiceArr[i].pop.remove;
-    }
-
 for( var i=0; i<value; i++){
 
         vardice = new Dice();
