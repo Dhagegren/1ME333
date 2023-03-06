@@ -3,12 +3,11 @@ var DicePage = function(value){
 
     var DiceArr = [];
 
-
-for( var i=0; i<value; i++){
-    var dice = new Dice();
-    DiceArr.push(dice);
-    dice.roll();
-}
+    for( var i=0; i<value; i++){
+        var dice = new Dice();
+        DiceArr.push(dice);
+        dice.roll(); 
+    }
 
 
 window.addEventListener("devicemotion", function (event) {
