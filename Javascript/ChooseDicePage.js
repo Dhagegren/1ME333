@@ -3,6 +3,7 @@
 
 function ChooseDicePage() {
 
+  
   //fixa createHeader klassen
     var message = document.createElement("h2");
     message.textContent = "Hur många tärningar vill du kasta?";

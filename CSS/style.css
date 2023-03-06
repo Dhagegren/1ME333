@@ -16,6 +16,7 @@ h1 {
     width: 102.5px;
     height: 102px;
     transition: transform 1.5s ease-in-out;
+    margin: 10px;
   }
 
 .dice{
