@@ -5,16 +5,17 @@ var DicePage = function(value){
 
 
 for( var i=0; i<value; i++){
-    if(DiceArr.length > 0){
-        for(i=0; i<DiceArr.length; i++){
-            DiceArr[i].pop.remove;
+
+         for(i=0; i<DiceArr.length; i++){
+        DiceArr[i].pop.remove;
+    
         }
-    }
-    else{
-    var dice = new Dice();
-    DiceArr.push(dice);
-    dice.roll();
-    }
+        
+        var dice = new Dice();
+        DiceArr.push(dice);
+        dice.roll();
+    
+  
 }
 
 
