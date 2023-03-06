@@ -10,7 +10,7 @@ Permission.givePermission = function(){
     if (typeof DeviceMotionEvent.requestPermission === 'function') {
         DeviceMotionEvent.requestPermission().then(response => {
             if (response === 'granted') {
-                window.location.replace ="chooseDicePage.html";
+                window.location.href ="chooseDicePage.html";
                 var choose = new ChooseDicePage(); 
                 window.dispatchEvent(new DeviceMotionEvent('devicemotion'));
             }
