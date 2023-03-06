@@ -141,7 +141,7 @@ h2{
   width: 100px;
   height: 100px;
   position: absolute;
-  left: 220px;
+  left: 230px;
   top: 50px;
   transform: rotateZ(10deg);
 
@@ -150,8 +150,9 @@ h2{
   width: 100px;
   height: 100px;
   position: absolute;
-  left: 290px;
+  left: 210px;
   top: 630px; 
+  transform: rotateZ(-10deg);
  
 
 }
@@ -159,7 +160,7 @@ h2{
   width: 100px;
   height: 100px;
   position: absolute;
-  left: 180px;
+  left: 220px;
   top: 400px;
   transform: rotateZ(-10deg);
 
