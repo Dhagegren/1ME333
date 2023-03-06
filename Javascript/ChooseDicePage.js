@@ -11,9 +11,7 @@ function ChooseDicePage() {
 
     // Create buttons for each number of dice
     for (var i = 1; i <= 6; i++) {
-        this.button = CreateButton(i);
-        this.button.setAttribute("class", "btns");
-     
+      
       // Eventlystnare på knappen
       button.addEventListener("click", function(event) {
 

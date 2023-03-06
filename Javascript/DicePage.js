@@ -3,11 +3,6 @@ var DicePage = function(value){
 
     var DiceArr = [];
 
-    var btns = document.getElementsByClassName("btns");
-    for(i=0; i<btns.length; i++){
-        btns[i].style.display="none";
-    }
-
     for( var i=0; i<value; i++){
         var dice = new Dice();
         DiceArr.push(dice);
