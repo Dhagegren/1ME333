@@ -19,9 +19,9 @@ function ChooseDicePage() {
       button.addEventListener("click", function(event) {
 
         var numDice = parseInt(event.target.textContent);
-
         //skapar en dicePage där tärningarna kommer att vara
         var dicepage = new DicePage(numDice);
+        button.style.display = 'none';
 
       });
     }
