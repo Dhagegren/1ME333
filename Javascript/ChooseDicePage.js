@@ -9,11 +9,10 @@ function ChooseDicePage() {
     message.textContent = "Hur många tärningar vill du kasta?";
     document.body.appendChild(message);
 
-
-
     // Create buttons for each number of dice
     for (var i = 1; i <= 6; i++) {
-       var button = CreateButton(i);
+        this.button = CreateButton(i);
+        this.button.setAttribute("class", "btns");
      
       // Eventlystnare på knappen
       button.addEventListener("click", function(event) {
@@ -21,7 +20,6 @@ function ChooseDicePage() {
         var numDice = parseInt(event.target.textContent);
         //skapar en dicePage där tärningarna kommer att vara
         var dicepage = new DicePage(numDice);
-        button[i].style.display = "none";
 
       });
     }
