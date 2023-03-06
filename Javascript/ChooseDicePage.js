@@ -16,7 +16,7 @@ var ChooseDicePage = function() {
 
         this.header = document.getElementsByTagName("h2");
         this.header[0].style.display = "none"
-        
+
         this.numDice = parseInt(event.target.textContent);
         //skapar en dicePage där tärningarna kommer att vara
         this.dicepage = new DicePage(this.numDice);

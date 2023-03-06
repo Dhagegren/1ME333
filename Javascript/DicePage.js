@@ -1,15 +1,15 @@
 //Ska hålla tärningarna och även här ska funktionerna för att kolla om det skakar finnas.
 var DicePage = function(value){
 
-    var diceArr = [];
+    var DiceArr = [];
 
     for( var i=0; i<value; i++){
         var dice = new Dice();
-        this.diceArr.push(dice);
+        DiceArr.push(dice);
         dice.roll(); 
     }
 
-
+   
 window.addEventListener("devicemotion", function (event) {
      
 const threshhold = 15;
@@ -23,8 +23,10 @@ if(acceleration> threshhold){
 
 
 function diceRoll(){
-for(i=0; i<this.diceArr.length; i++){
-    this.diceArr[i].roll();
+    console.log(DiceArr.length);
+for(i=0; i<DiceArr.length; i++){
+    DiceArr[i].roll();
+
 }
 }
 
