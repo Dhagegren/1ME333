@@ -5,9 +5,10 @@ function ChooseDicePage() {
 
   
   //fixa createHeader klassen
-    var message = document.createElement("h2");
-    message.textContent = "Hur många tärningar vill du kasta?";
-    document.body.appendChild(message);
+    // var message = document.createElement("h2");
+    // message.textContent = "Hur många tärningar vill du kasta?";
+    // document.body.appendChild(message);
+    var header = CreateHeader("hur många tärningar vill du kasta?");
 
     // Create buttons for each number of dice
     for (var i = 1; i <= 6; i++) {

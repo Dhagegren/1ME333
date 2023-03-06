@@ -1,4 +1,4 @@
-function CreateHeader(text){
+var CreateHeader = function(text){
     var textNode = document.createElement("h1");
     textNode.textContent = text;
     document.body.appendChild(textNode);

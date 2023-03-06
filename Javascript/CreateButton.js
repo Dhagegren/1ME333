@@ -1,4 +1,5 @@
-function CreateButton(text) {
+  var CreateButton = function(text) {
+
   var button = document.createElement("button");
   button.textContent = text;
   document.body.appendChild(button);
