@@ -21,7 +21,7 @@ function ChooseDicePage() {
         var numDice = parseInt(event.target.textContent);
         //skapar en dicePage där tärningarna kommer att vara
         var dicepage = new DicePage(numDice);
-        button.style.display = 'none';
+        button[i].style.display = "none";
 
       });
     }
