@@ -10,7 +10,6 @@ h1 {
   }
 
   .diceWrapper{
-    margin: 5px;
     transform-style: preserve-3d;
     transform: 1s;
     width: 102.5px;
@@ -97,6 +96,58 @@ h1 {
       
       .show-2 {
         transform: rotateX(450deg) rotateZ(-720deg); }
+
+#div1{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 100px;
+  top: 250px;
+
+}
+#div2{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 40px;
+  top: 80px;
+
+}
+#div3{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 10px;
+  top: 400px;
+
+}
+#div4{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 220px;
+  top: 50px;
+
+}
+#div5{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 180px;
+  top: 520px;
+
+}
+#div6{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 220px;
+  top: 350px;
+
+}
+
+
+
       
 
 
