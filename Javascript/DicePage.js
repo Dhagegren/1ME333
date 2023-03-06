@@ -6,11 +6,11 @@ var DicePage = function(value){
 
 for( var i=0; i<value; i++){
 
-         for(i=0; i<DiceArr.length; i++){
-        DiceArr[i].pop.remove;
+        //  for(i=0; i<DiceArr.length; i++){
+        // DiceArr[i].pop.remove;
     
-        }
-        
+        // }
+
         var dice = new Dice();
         DiceArr.push(dice);
         dice.roll();
