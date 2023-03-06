@@ -3,7 +3,9 @@
 
 var ChooseDicePage = function() {
  
-    
+
+      delete Main.startpage; 
+
      this.header = new CreateHead("Hur många tärningar vill du kasta?");
   
       // Create buttons for each number of dice
