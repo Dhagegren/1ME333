@@ -1,9 +1,9 @@
   var CreateButton = function(text) {
 
-  var button = document.createElement("button");
-  button.textContent = text;
+  this.button = document.createElement("button");
+  this.button.textContent = text;
   document.body.appendChild(button);
-  return button;
+  return this.button;
   }
   
  

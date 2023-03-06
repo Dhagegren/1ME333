@@ -1,6 +1,6 @@
 var CreateHeader = function(text){
-    var textNode = document.createElement("h1");
-    textNode.textContent = text;
+    this.textNode = document.createElement("h1");
+    this.textNode.textContent = text;
     document.body.appendChild(textNode);
     return textNode;
 }
