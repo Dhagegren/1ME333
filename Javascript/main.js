@@ -7,7 +7,7 @@ var Main = {
   }
 
 }
-window.addEventListener("load", init);
+window.addEventListener("load", Main.init);
 
     
 
