@@ -1,25 +1,39 @@
 //Knappar för välja hur många tärningar man vill slå, 1-6
 // Kankse välja färg på tärningar
 
-function ChooseDicePage() {
+var ChooseDicePage = function() {
 
   
-  //fixa createHeader klassen
-    // var message = document.createElement("h2");
-    // message.textContent = "Hur många tärningar vill du kasta?";
-    // document.body.appendChild(message);
-    var header = CreateHeader("hur många tärningar vill du kasta?");
-
+     this.header = new CreateHead("Hur många tärningar vill du kasta?");
+  
     // Create buttons for each number of dice
     for (var i = 1; i <= 6; i++) {
-      var button = CreateButton(i);
+      this.button = new CreateButton(i);
+   
       // Eventlystnare på knappen
-      button.addEventListener("click", function(event) {
+      this.button.addEventListener("click", function(event) {
 
-        var numDice = parseInt(event.target.textContent);
+
+        this.header = document.getElementsByTagName("h2");
+        this.header[0].style.display = "none"
+        
+        this.numDice = parseInt(event.target.textContent);
         //skapar en dicePage där tärningarna kommer att vara
-        var dicepage = new DicePage(numDice);
+        this.dicepage = new DicePage(this.numDice);
+
+        
+        this.buttons = document.getElementsByTagName("button");
+        for(i=0; i<this.buttons.length; i++){
+          this.buttons[i].style.display= "none"
+        };
+       
 
       });
+      
     }
   }
+
+  // this.buttons = document.getElementsByTagName("button");
+  //       for(i=0; i<buttons.length; i++){
+  //         buttons[i].style.display="none";
+         
