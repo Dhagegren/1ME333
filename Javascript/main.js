@@ -4,7 +4,7 @@ var Main = {
  init: function() {
    var startpage = new StartPage("tryck på mig");
   },
-
+  
 }
 window.addEventListener("load", Main.init);
 

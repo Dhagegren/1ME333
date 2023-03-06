@@ -2,7 +2,21 @@
 var DicePage = function(value){
 
 
-        this.positionArray= [];
+      
+    
+    delete Permission.Choose;
+
+    //detta kanske kommer att fungera, jag vet inte riktigt hur, det tar mig tillbaka och jag kan
+    // var backBtn = document.createElement("div");
+    // backBtn.setAttribute("id", "backBtn");
+    // backBtn.addEventListener("click", function(event){
+  
+    //     var choose = new ChooseDicePage();
+    //     document.body.appendChild(this.backBtn);
+    // });
+  
+
+    this.positionArray= [];
         for(i=1; i<7; i++){
         this.diceHolder = document.createElement("div");
         this.diceHolder.setAttribute("id","div"+i);
@@ -10,9 +24,6 @@ var DicePage = function(value){
         this.positionArray.push(this.diceHolder);
         }
        
-        
-
-
     var DiceArr = [];
 
     for( var i=0; i<value; i++){
