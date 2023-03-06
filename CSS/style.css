@@ -3,7 +3,6 @@ body{
     padding: 0;
     background-image: url("../IMG/woodentable.png");
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: black;
 }
 
 h2{
@@ -36,9 +35,7 @@ h2{
   margin-top: 20px;
   font-size: 20px;
   font-weight: bold;
-
-
-
+  color: black;
 }
 
 .one{
