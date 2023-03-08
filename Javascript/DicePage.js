@@ -32,7 +32,7 @@ this.button.addEventListener("click", function(){
 
 
 
-
+    this.eventRoll = function(){
     window.addEventListener("devicemotion", function (event) {
       
         const threshhold = 15;
@@ -52,6 +52,8 @@ this.button.addEventListener("click", function(){
 
         }
     }
+}
+this.eventRoll();
 
 }
 

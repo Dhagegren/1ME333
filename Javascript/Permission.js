@@ -9,6 +9,7 @@ Permission.givePermission = function(){
     if (typeof DeviceMotionEvent.requestPermission === 'function') {
         DeviceMotionEvent.requestPermission().then(response => {
             if (response === 'granted') {
+
                 View.add(ChooseDicePage);
                 View.swap(1);
                 var choose = new ChooseDicePage(); 
