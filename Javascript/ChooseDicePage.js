@@ -9,6 +9,8 @@ var ChooseDicePage = function() {
     message.textContent = "Hur många tärningar vill du kasta?";
     document.body.appendChild(message);
 
+    delete Main.startpage; 
+
     // Create buttons for each number of dice
     for (var i = 1; i <= 6; i++) {
       
