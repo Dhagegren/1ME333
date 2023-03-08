@@ -14,6 +14,7 @@ this.button.addEventListener("click", function(){
 
 
     this.positionArray = [];
+    this.diceArr = [];
     for (i = 1; i < 7; i++) {
         this.diceHolder = document.createElement("div");
         this.diceHolder.setAttribute("id", "div" + i);
@@ -25,8 +26,9 @@ this.button.addEventListener("click", function(){
     for (var i = 0; i < 6; i++) {
         var dice = new Dice();
         this.positionArray[i].appendChild(dice.diceWrapper);
-        console.log(this.positionArray[i]);
+        this.diceArr.push(dice);
         dice.roll();
+
     }
 
 
