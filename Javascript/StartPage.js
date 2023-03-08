@@ -6,10 +6,12 @@
 var StartPage = function(buttonText) {
   
   View.call(this);
-  this.createContainer 
+ 
 
-    this.button = new CreateButton("Tryck på mig");
+    this.button = document.createElement("button");
     this.button.setAttribute("id", "startBtn");
+    this.button.textContent = "Tryck på mig";
+    this.viewContainer.appendChild(this.button);
     this.button.addEventListener("click", Permission.givePermission);
  
   }
@@ -17,4 +19,3 @@ var StartPage = function(buttonText) {
   StartPage.prototype = Object.create(View.prototype);
   StartPage.constructor = View;
 
-  //var start = new Startpage("Start");

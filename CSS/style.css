@@ -1,32 +1,32 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-image: url("../IMG/woodentable.png");
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../IMG/woodentable.png");
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-h2{
+h2 {
   margin-left: 25px;
   margin-top: 35px;
 }
 
-  .diceWrapper{
-    transform-style: preserve-3d;
-    transform: 1s;
-    width: 102.5px;
-    height: 102px;
-    transition: transform 1.5s ease-in-out;
-    margin: 10px;
-  }
-
-.dice{
-    width: 100%;
-    height: 100%;
-    display: block;
-    background			: url("../IMG/dices.svg") no-repeat;
+.diceWrapper {
+  transform-style: preserve-3d;
+  transform: 1s;
+  width: 102.5px;
+  height: 102px;
+  transition: transform 1.5s ease-in-out;
+  margin: 10px;
 }
 
-.chooseBtn{
+.dice {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url("../IMG/dices.svg") no-repeat;
+}
+
+.chooseBtn {
   width: 300px;
   height: 40px;
   border-radius: 25px;
@@ -38,7 +38,7 @@ h2{
   color: black;
 }
 
-#startBtn{
+#startBtn {
   text-align: center;
   width: 250px;
   height: 250px;
@@ -48,84 +48,96 @@ h2{
   border-color: #232023;
   margin-left: 65px;
   margin-top: 220px;
-  background-color:rgb(221, 211, 176) ;
+  background-color: rgb(221, 211, 176);
   border-radius: 100%;
   color: black;
 }
 
-.one{
-    background-position	: 0 0x;
-}
-.two{
-    background-position	: 0 -100px;
-}
-.three{
-    background-position	: 0 -200px;
+.one {
+  background-position: 0 0x;
 }
 
-.four{
-    background-position	: 0 -300px; 
+.two {
+  background-position: 0 -100px;
 }
 
-.five{
-    background-position	: 0 -400px;
+.three {
+  background-position: 0 -200px;
 }
 
-.six{
-    background-position	: 0 -500px; 
+.four {
+  background-position: 0 -300px;
+}
+
+.five {
+  background-position: 0 -400px;
+}
+
+.six {
+  background-position: 0 -500px;
 }
 
 
 .side {
-    position: absolute;
-    background-color: #ffF;
-    border-radius:5px;
-    width: 100;
-    height: 100;
-    border: 1px solid #e5e5e5;
-  }
+  position: absolute;
+  background-color: #ffF;
+  border-radius: 5px;
+  width: 100;
+  height: 100;
+  border: 1px solid #e5e5e5;
+}
 
 
-  .side:nth-child(1) {
-    transform: translateZ(3.1em); }
-  
-  .side:nth-child(6) {
-    transform: rotateY(90deg) translateZ(3.1em); }
-  
-  .side:nth-child(3) {
-    transform: rotateY(-90deg) translateZ(3.1em); }
-  
-  .side:nth-child(4) {
-    transform: rotateX(90deg) translateZ(3.1em); }
-  
-  .side:nth-child(5) {
-    transform: rotateX(-90deg) translateZ(3.1em); }
-  
-  .side:nth-child(2) {
-    transform: rotateY(-180deg) translateZ(3.1em); }
+.side:nth-child(1) {
+  transform: translateZ(3.1em);
+}
+
+.side:nth-child(6) {
+  transform: rotateY(90deg) translateZ(3.1em);
+}
+
+.side:nth-child(3) {
+  transform: rotateY(-90deg) translateZ(3.1em);
+}
+
+.side:nth-child(4) {
+  transform: rotateX(90deg) translateZ(3.1em);
+}
+
+.side:nth-child(5) {
+  transform: rotateX(-90deg) translateZ(3.1em);
+}
+
+.side:nth-child(2) {
+  transform: rotateY(-180deg) translateZ(3.1em);
+}
 
 
+.show-1 {
+  transform: rotateX(720deg) rotateZ(-720deg);
+}
 
+.show-6 {
+  transform: rotateX(-900deg) rotateZ(1080deg);
+}
 
-      .show-1 {
-        transform: rotateX(720deg) rotateZ(-720deg); }
-      
-      .show-6 {
-        transform: rotateX(-900deg) rotateZ(1080deg); }
-      
-      .show-3 {
-        transform: rotateY(-450deg) rotateZ(-1440deg); }
-      
-      .show-4 {
-        transform: rotateY(810deg) rotateZ(720deg); }
-      
-      .show-5 {
-        transform: rotateX(-810deg) rotateZ(-1080deg); }
-      
-      .show-2 {
-        transform: rotateX(450deg) rotateZ(-720deg); }
+.show-3 {
+  transform: rotateY(-450deg) rotateZ(-1440deg);
+}
 
-#div1{
+.show-4 {
+  transform: rotateY(810deg) rotateZ(720deg);
+}
+
+.show-5 {
+  transform: rotateX(-810deg) rotateZ(-1080deg);
+}
+
+.show-2 {
+  transform: rotateX(450deg) rotateZ(-720deg);
+}
+
+#div1 {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -134,7 +146,8 @@ h2{
   transform: rotateZ(-5deg);
 
 }
-#div2{
+
+#div2 {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -143,7 +156,8 @@ h2{
   transform: rotateZ(25deg);
 
 }
-#div3{
+
+#div3 {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -152,7 +166,8 @@ h2{
   transform: rotateZ(-25deg);
 
 }
-#div4{
+
+#div4 {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -161,17 +176,19 @@ h2{
   transform: rotateZ(10deg);
 
 }
-#div5{
+
+#div5 {
   width: 100px;
   height: 100px;
   position: absolute;
   left: 210px;
-  top: 630px; 
+  top: 630px;
   transform: rotateZ(-10deg);
- 
+
 
 }
-#div6{
+
+#div6 {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -182,17 +199,9 @@ h2{
 }
 
 
-#backBtn{
+#backBtn {
   background-image: url("../IMG/returnbtn.svg");
   width: 50px;
   height: 50px;
   z-index: 6;
 }
-
-
-
-      
-
-
-
-  
