@@ -2,6 +2,8 @@
 var DicePage = function(value){
 
 
+    View.call(this);
+    this.createContainer 
       
     
     delete Permission.Choose;
@@ -59,3 +61,7 @@ for(i=0; i<DiceArr.length; i++){
 }
 
 }
+
+
+DicePage.prototype = Object.create(View.prototype);
+DicePage.constructor = View;

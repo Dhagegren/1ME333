@@ -2,7 +2,9 @@
 var Main = {
 
  init: function() {
-   var startpage = new StartPage("tryck på mig");
+  View.add(StartPage);
+  View.swap(0);
+   //var startpage = new StartPage("tryck på mig");
   },
   
 }

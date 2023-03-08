@@ -3,6 +3,9 @@
 
 var ChooseDicePage = function() {
  
+    View.call(this);
+    this.createContainer
+    
 
       delete Main.startpage; 
     
@@ -47,6 +50,8 @@ var ChooseDicePage = function() {
       });
       
     }
+    ChooseDicePage.prototype = Object.create(View.prototype);
+    ChooseDicePage.constructor = View;
   }
 
   // this.buttons = document.getElementsByTagName("button");
