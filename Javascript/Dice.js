@@ -2,7 +2,7 @@ var Dice = function() {
 
     this.diceWrapper = document.createElement("div");
     this.diceWrapper.setAttribute("class", "diceWrapper show-1");
-    document.body.appendChild(this.diceWrapper);
+    //document.body.appendChild(this.diceWrapper);
 
 
     this.sideOne = document.createElement("div");
@@ -42,6 +42,9 @@ var Dice = function() {
           }
         }
       }.bind(this);
+
+
+  
 }
 
 
