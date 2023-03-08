@@ -6,18 +6,18 @@ var Permission = {
 
 }
 Permission.givePermission = function(){
-   var choose = new ChooseDicePage(); 
-    // if (typeof DeviceMotionEvent.requestPermission === 'function') {
-    //     DeviceMotionEvent.requestPermission().then(response => {
-    //         if (response === 'granted') {
-    //             //tar väck style på startknappen efter att den har gett
-    //             // var startbtn =document.getElementById("startBtn");
-    //             // startbtn.style.display="none";
-    //             var choose = new ChooseDicePage(); 
-    //             window.dispatchEvent(new DeviceMotionEvent('devicemotion'));
-    //         }
-    //     });
-   // }
+   // var choose = new ChooseDicePage(); 
+    if (typeof DeviceMotionEvent.requestPermission === 'function') {
+        DeviceMotionEvent.requestPermission().then(response => {
+            if (response === 'granted') {
+                //tar väck style på startknappen efter att den har gett
+                // var startbtn =document.getElementById("startBtn");
+                // startbtn.style.display="none";
+                var choose = new ChooseDicePage(); 
+                window.dispatchEvent(new DeviceMotionEvent('devicemotion'));
+            }
+        });
+    }
   
 }  
 
