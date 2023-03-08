@@ -6,16 +6,18 @@ var ChooseDicePage = function() {
   
   //fixa createHeader klassen
     this.message = document.createElement("h2");
-    message.textContent = "Hur många tärningar vill du kasta?";
-    document.body.appendChild(message);
+    this.message.textContent = "Hur många tärningar vill du kasta?";
+    document.body.appendChild(this.message);
 
-    delete Main.startpage; 
+    //delete Main.startpage; 
 
     // Create buttons for each number of dice
     for (var i = 1; i <= 6; i++) {
       
       // Eventlystnare på knappen
-      button.addEventListener("click", function(event) {
+      this.button = CreateButton(i);
+      this.button.setAttribute("class", "chooseBtn");
+      this.button.addEventListener("click", function(event) {
 
         this.numDice = parseInt(event.target.textContent);
         //skapar en dicePage där tärningarna kommer att vara
