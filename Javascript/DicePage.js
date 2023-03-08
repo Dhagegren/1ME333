@@ -27,7 +27,7 @@ var DicePage = function (value) {
         var dice = new Dice();
         this.positionArray[i].appendChild(dice.diceWrapper);
         this.diceArr.push(dice);
-        dice.roll();
+        dice.roll;
     }
 
 
@@ -48,9 +48,11 @@ var DicePage = function (value) {
     });
 
     }
+    console.log(this.diceArr[0].roll);
     this.diceRoll = function() {
         for (i = 0; i < this.diceArr.length; i++) {
-            this.diceArr[i].roll();
+            this.diceArr[i].roll;
+        
 
         }
     }
