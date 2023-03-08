@@ -15,12 +15,14 @@ var DicePage = function(value){
     //     document.body.appendChild(this.backBtn);
     // });
   
+    this.dicePageContainer = document.createElement("div");
+    document.body.appendChild(this.dicePageContainer);
 
     this.positionArray= [];
         for(i=1; i<7; i++){
         this.diceHolder = document.createElement("div");
         this.diceHolder.setAttribute("id","div"+i);
-        document.body.appendChild(this.diceHolder);
+        this.dicePageContainer.appendChild(this.diceHolder);
         this.positionArray.push(this.diceHolder);
         }
        

@@ -5,13 +5,20 @@ var ChooseDicePage = function() {
  
 
       delete Main.startpage; 
+    
+      this.chooseDicePageContainer = document.createElement("div");
+      document.body.appendChild(this.chooseDicePageContainer);
 
-     this.header = new CreateHead("Hur många tärningar vill du kasta?");
+    //  this.header = new CreateHead("Hur många tärningar vill du kasta?");
+    this.header = document.createElement("h2");
+    this.chooseDicePageContainer.appendChild(this.header);
   
       // Create buttons for each number of dice
       for (var i = 1; i <= 6; i++) {
-      this.button = new CreateButton(i);
+      // this.button = new CreateButton(i);
+      this.button = document.createElement("button");
       this.button.setAttribute("class", "chooseBtn");
+      this.chooseDicePageContainer.appendChild(this.button);
    
       // Eventlystnare på knappen
       this.button.addEventListener("click", function(event) {
