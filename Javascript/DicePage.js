@@ -34,7 +34,7 @@ this.button.addEventListener("click", function(){
 
 
     window.addEventListener("devicemotion", function (event) {
-
+      
         const threshhold = 15;
         const { x, y, z } = event.acceleration;
         const acceleration = Math.sqrt(x ** 2 + y ** 2 + z ** 2);
