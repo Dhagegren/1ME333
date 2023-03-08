@@ -18,6 +18,7 @@ var ChooseDicePage = function() {
       // this.button = new CreateButton(i);
       this.button = document.createElement("button");
       this.button.setAttribute("class", "chooseBtn");
+      this.button.textContent = i;
       this.chooseDicePageContainer.appendChild(this.button);
    
       // Eventlystnare på knappen
