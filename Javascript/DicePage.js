@@ -1,6 +1,7 @@
 //Ska hålla tärningarna och även här ska funktionerna för att kolla om det skakar finnas.
 var DicePage = function (value) {
 
+  
 
 
     View.call(this);
@@ -41,15 +42,27 @@ var DicePage = function (value) {
         this.positionArray[i].appendChild(dice.diceWrapper);
         this.diceArr.push(dice);
         dice.roll();
+        console.log(this.diceArr[i]);
     }
 
+   
+    
+    // this.diceRoll = function () {
+    //     this.diceArr[i];
+    //     for (i = 0; i < this.diceArr.length; i++) {
+    //         this.diceArr[i].roll();
+    //     }
+    // }
 
+    this.diceRoll = function(){
+        do{
+            this.diceArr[i];
+            for (i = 0; i < this.diceArr.length; i++) {
+                this.diceArr[i].roll();
+            }
 
-    this.diceRoll = function () {
-        console.log(this.diceArr.length);
-        for (i = 0; i < this.diceArr.length; i++) {
-            this.diceArr[i].roll();
         }
+        while(i<this.diceArr[i].value);
     }
 
 

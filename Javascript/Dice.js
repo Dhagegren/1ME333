@@ -1,5 +1,9 @@
 var Dice = function() {
 
+    //kanske funkar för en do-while
+    this.value = 0;
+
+
     this.diceWrapper = document.createElement("div");
     this.diceWrapper.setAttribute("class", "diceWrapper show-1");
    
@@ -32,6 +36,7 @@ var Dice = function() {
     this.roll = function(){
         var value =  Math.ceil(Math.random()* 6);
         for(var i = 0; i<7; i++){
+          this.value = i;
           this.diceWrapper.classList.remove("show-" + i);
           if(value == i){
             this.diceWrapper.classList.add("show-"+ i);

@@ -22,9 +22,7 @@ View.swap = function(id, args){
         View.view = null; 
     }
     View.view = new View.views[id](args);    
-    View.view.append(document.body);
-    console.log(View.view);
-    
+    View.view.append(document.body);    
 }
 
 View.prototype.append = function(to){
