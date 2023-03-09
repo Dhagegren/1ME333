@@ -14,6 +14,7 @@ var DicePage = function (value) {
         const acceleration = Math.sqrt(x ** 2 + y ** 2 + z ** 2);
 
         if (acceleration > threshhold) {
+            alert("skak");
             this.diceRoll();
         }
     });
@@ -47,8 +48,6 @@ var DicePage = function (value) {
     this.diceRoll = function () {
         for (i = 0; i < this.diceArr.length; i++) {
             this.diceArr[i].roll();
-
-
         }
     }
 
