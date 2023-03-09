@@ -29,7 +29,7 @@ var ChooseDicePage = function () {
   
   
         View.add(DicePage);
-        View.swap(2);
+        View.swap(2, [this.numDice]);
   
         //this.dicepage = new DicePage(this.numDice);
   

@@ -2,9 +2,22 @@
 var DicePage = function (value) {
 
 
+
     View.call(this);
     this.diceArr = [];
 
+
+    this.viewContainer.addEventListener("devicemotion", function (event) {
+        console.log("hej");
+       
+        const threshhold = 15;
+        const { x, y, z } = event.acceleration;
+        const acceleration = Math.sqrt(x ** 2 + y ** 2 + z ** 2);
+
+        if (acceleration > threshhold) {
+            this.diceRoll();
+        }
+    });
 
 
     this.button = document.createElement("button");
@@ -23,12 +36,14 @@ var DicePage = function (value) {
         this.positionArray.push(this.diceHolder);
     }
 
-    for (var i = 0; i < 6; i++) {
+    for (var i = 0; i < value[0]; i++) {
         var dice = new Dice();
         this.positionArray[i].appendChild(dice.diceWrapper);
         this.diceArr.push(dice);
         dice.roll();
     }
+
+
 
     this.diceRoll = function () {
         for (i = 0; i < this.diceArr.length; i++) {
@@ -39,24 +54,8 @@ var DicePage = function (value) {
     }
 
 
-    this.eventRoll = function () {
-        window.addEventListener("devicemotion", function (event) {
-       
-            const threshhold = 15;
-            const { x, y, z } = event.acceleration;
-            const acceleration = Math.sqrt(x ** 2 + y ** 2 + z ** 2);
-
-            if (acceleration > threshhold) {
-                this.diceRoll();
-            }
-        });
-
-    }
-
   
 
-    this.eventRoll();
-    this.diceRoll();
 
 
 }

@@ -13,14 +13,15 @@ View.add = function(v){
 
 }
 
-View.swap = function(id){
+View.swap = function(id, args){
     
+
    
     if(View.view != null){
         View.view.remove();
         View.view = null; 
     }
-    View.view = new View.views[id]();    
+    View.view = new View.views[id](args);    
     View.view.append(document.body);
     console.log(View.view);
     
