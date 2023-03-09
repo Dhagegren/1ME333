@@ -7,8 +7,9 @@ var DicePage = function (value) {
     this.diceArr = [];
 
 
+    alert("skapa");
     this.viewContainer.addEventListener("devicemotion", function (event) {
-        console.log("hej");
+        alert("skak");
        
         const threshhold = 15;
         const { x, y, z } = event.acceleration;
