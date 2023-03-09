@@ -11,11 +11,10 @@ Permission.givePermission = function(){
             if (response === 'granted') {
                 View.add(ChooseDicePage);
                 View.swap(1);
-                var choose = new ChooseDicePage(); 
                 window.dispatchEvent(new DeviceMotionEvent('devicemotion'));
             }
         });
     }
-  
+    
 }  
 

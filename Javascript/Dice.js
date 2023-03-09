@@ -29,8 +29,6 @@ var Dice = function() {
 
 
  
-
-
     this.roll = function(){
         var value =  Math.ceil(Math.random()* 6);
         for(var i = 0; i<7; i++){
