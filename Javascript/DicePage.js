@@ -62,7 +62,7 @@ var DicePage = function (value) {
             }
 
         }
-        while(i != this.diceArr[i].value);
+        while(i = this.diceArr[i].value);
     }
 
 
