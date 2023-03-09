@@ -8,7 +8,7 @@ var DicePage = function (value) {
 
 
     alert("skapa");
-    Window.addEventListener("devicemotion", function (event) {
+    window.addEventListener("devicemotion", function (event) {
         alert("skak");
        
         const threshhold = 15;
