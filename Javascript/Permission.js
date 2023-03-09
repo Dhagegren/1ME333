@@ -17,6 +17,9 @@ Permission.givePermission = function(){
             }
         });
     }
+
+    // View.add(ChooseDicePage);
+    // View.swap(1);
   
 }  
 

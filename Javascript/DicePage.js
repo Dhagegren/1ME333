@@ -7,6 +7,7 @@ var DicePage = function (value) {
     this.diceArr = [];
 
 
+    m_this = this;
     window.addEventListener("devicemotion", function (event) {
        
         const threshhold = 15;
@@ -14,8 +15,7 @@ var DicePage = function (value) {
         const acceleration = Math.sqrt(x ** 2 + y ** 2 + z ** 2);
 
         if (acceleration > threshhold) {
-            alert("skak");
-            this.diceRoll();
+            m_this.diceRoll();
         }
     });
 
@@ -46,6 +46,7 @@ var DicePage = function (value) {
 
 
     this.diceRoll = function () {
+        console.log(this.diceArr.length);
         for (i = 0; i < this.diceArr.length; i++) {
             this.diceArr[i].roll();
         }
