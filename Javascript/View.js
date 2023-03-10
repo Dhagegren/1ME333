@@ -10,13 +10,10 @@ View.views = [];
 
 View.add = function(v){
     View.views.push(v)
-
 }
 
 View.swap = function(id, args){
     
-
-   
     if(View.view != null){
         View.view.remove();
         View.view = null; 

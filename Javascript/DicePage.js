@@ -1,7 +1,7 @@
 //Ska hålla tärningarna och även här ska funktionerna för att kolla om det skakar finnas.
 var DicePage = function (value) {
 
-  
+
 
 
     View.call(this);
@@ -10,7 +10,7 @@ var DicePage = function (value) {
 
     m_this = this;
     window.addEventListener("devicemotion", function (event) {
-       
+
         const threshhold = 15;
         const { x, y, z } = event.acceleration;
         const acceleration = Math.sqrt(x ** 2 + y ** 2 + z ** 2);
@@ -22,10 +22,12 @@ var DicePage = function (value) {
 
 
     this.button = document.createElement("button");
+    this.button.setAttribute("id", "backBtn");
     this.viewContainer.appendChild(this.button);
     this.button.addEventListener("click", function () {
         View.swap(1);
     })
+
 
 
 
@@ -42,39 +44,24 @@ var DicePage = function (value) {
         this.positionArray[i].appendChild(dice.diceWrapper);
         this.diceArr.push(dice);
         dice.roll();
-        console.log(this.diceArr[i]);
     }
+
 
    
-    
-    // this.diceRoll = function () {
-    //     this.diceArr[i];
-    //     for (i = 0; i < this.diceArr.length; i++) {
-    //         this.diceArr[i].roll();
-    //     }
-    // }
 
-    this.diceRoll = function(){
-        do{
-            this.diceArr[i];
-            for (i = 0; i < this.diceArr.length; i++) {
-                this.diceArr[i].roll();
-            }
+}
 
+DicePage.prototype.diceRoll = function () {
+    do {
+        this.diceArr[i];
+        for (i = 0; i < this.diceArr.length; i++) {
+            this.diceArr[i].roll();
         }
-        while(i = this.diceArr[i].value);
+
     }
-
-
-  
-
-
-
+    while (i = this.diceArr[i].value);
 }
 
-DicePage.prototype.addDices = function (value) {
-
-}
 
 
 DicePage.prototype = Object.create(View.prototype);
