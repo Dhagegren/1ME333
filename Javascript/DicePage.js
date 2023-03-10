@@ -47,19 +47,17 @@ var DicePage = function (value) {
     }
 
 
-   
+    this.diceRoll = function () {
+        do {
+            this.diceArr[i];
+            for (i = 0; i < this.diceArr.length; i++) {
+                this.diceArr[i].roll();
+            }
 
-}
-
-DicePage.prototype.diceRoll = function () {
-    do {
-        this.diceArr[i];
-        for (i = 0; i < this.diceArr.length; i++) {
-            this.diceArr[i].roll();
         }
-
+        while (i = this.diceArr[i].value);
     }
-    while (i = this.diceArr[i].value);
+
 }
 
 
