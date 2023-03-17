@@ -8,7 +8,7 @@ var ChooseDicePage = function () {
   this.viewContainer.appendChild(this.chooseDicePageContainer);
 
   this.header = document.createElement("h2");
-  this.header.textContent= "Hur många tärningar vill du kasta?";
+  this.header.textContent = "Hur många tärningar vill du kasta?";
   this.chooseDicePageContainer.appendChild(this.header);
 
   //Skapa knappar mellan 1-6 som användaren kan välja för hur många tärningar som ska kastas.
