@@ -4,15 +4,15 @@ const filesToCache = [
   '/Manifest.webmanifest',
   '/IMG/dice2 copy.png',
   '/CSS/style.css',
-  '/Javascript/sw.js',
-  '/Javascript/sw-reg.js',
-  '/Javascript/View.js',
-  '/Javascript/Permission.js',
-  '/Javascript/main.js',
-  '/Javascript/Dice.js',
-  '/Javascript/StartPage.js',
-  '/Javascript/ChooseDicePage.js',
-  '/Javascript/DicePage.js'
+  'sw.js',
+  'sw-reg.js',
+  'View.js',
+  'Permission.js',
+  'main.js',
+  'Dice.js',
+  'StartPage.js',
+  'ChooseDicePage.js',
+  'DicePage.js'
 ];
 
 self.addEventListener('install', function(event) {
