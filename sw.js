@@ -1,8 +1,17 @@
 const cacheName = 'my-pwa-cache';
 const filesToCache = [
     '/',
-    '../sw.js',
-    '../Manifest.webmanifest'
+    '/sw.js',
+    '/Manifest.webmanifest',
+    '/CSS/style.css',
+    '/Javascript/sw-reg.js',
+    '/Javascript/View.js',
+    '/Javascript/Permission.js',
+    '/Javascript/main.js',
+    '/Javascript/Dice.js',
+    '/Javascript/StartPage.js',
+    '/Javascript/ChooseDicePage.js',
+    '/Javascript/DicePage.js'
   ];
 
 self.addEventListener('install', function(event) {
@@ -13,3 +22,4 @@ self.addEventListener('install', function(event) {
       })
   );
 });
+
