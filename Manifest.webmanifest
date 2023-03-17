@@ -1,6 +1,6 @@
 {
   "name": "Daniel app",
-  "short_name": "Danapp",
+  "short_name": "Dice app",
   "start_url": "index.html",
 
   "icons":[
