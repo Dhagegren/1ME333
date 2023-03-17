@@ -1,10 +1,10 @@
 const cacheName = 'my-pwa-cache';
 const filesToCache = [
     '/',
+    '../sw.js',
     '/Manifest.webmanifest',
     '/IMG/dice2 copy.png',
     '/CSS/style.css',
-    '../sw.js',
     '/Javascript/sw-reg.js',
     '/Javascript/View.js',
     '/Javascript/Permission.js',
