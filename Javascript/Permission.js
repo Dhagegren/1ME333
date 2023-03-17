@@ -1,6 +1,4 @@
-/*
-Static class used to give permission from the user that the devices motionevents can be recorded for use in the application.
-*/
+//Klassen ger har en funktion som ger en prompt till användaren som måste godkänna att rörelsesensorer används.
 var Permission = {
 
 
@@ -16,9 +14,5 @@ Permission.givePermission = function(){
               }
           });
       }
-
-     //View.add(ChooseDicePage);
-      //View.swap(1);
-
 }
 

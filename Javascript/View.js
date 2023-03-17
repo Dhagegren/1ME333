@@ -1,3 +1,4 @@
+//Klass som hanterar alla vyer(sidor) som StartPage, DicePage och ChooseDicePage ärver ifrån för att kunna byta mellan de olika sidorna med View.Swap.
 var View = function(){
 
     this.viewContainer = document.createElement("div");

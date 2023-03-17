@@ -11,7 +11,7 @@ var ChooseDicePage = function () {
   this.header.textContent= "Hur många tärningar vill du kasta?";
   this.chooseDicePageContainer.appendChild(this.header);
 
-  // Create buttons for each number of dice
+  //Skapa knappar mellan 1-6 som användaren kan välja för hur många tärningar som ska kastas.
   for (var i = 1; i <= 6; i++) {
     // this.button = new CreateButton(i);
     this.button = document.createElement("button");
@@ -19,21 +19,14 @@ var ChooseDicePage = function () {
     this.button.textContent = i;
     this.chooseDicePageContainer.appendChild(this.button);
 
-    // Eventlystnare på knappen
     this.button.addEventListener("click", function (event) {
 
 
 
       this.numDice = parseInt(event.target.textContent);
-      //skapar en dicePage där tärningarna kommer att vara
-
-
+      //Skapar en DicePage, och byter användaren dit och skickar med värdet som är valt.
       View.add(DicePage);
       View.swap(2, [this.numDice]);
-
-      //this.dicepage = new DicePage(this.numDice);
-
-
 
     });
 

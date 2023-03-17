@@ -1,9 +1,8 @@
 var Dice = function () {
 
-  //kanske funkar för en do-while
   this.value = 0;
 
-
+  //Skapar alla element som bygger upp en tärning.
   this.diceWrapper = document.createElement("div");
   this.diceWrapper.setAttribute("class", "diceWrapper show-1");
 
@@ -32,7 +31,7 @@ var Dice = function () {
   this.diceWrapper.appendChild(this.sideSix);
 
 
-
+  //Rullar värdet på tärningen och byter css klass för att tärningen ska "rulla"
   this.roll = function () {
     var value = Math.ceil(Math.random() * 6);
     for (var i = 0; i < 7; i++) {

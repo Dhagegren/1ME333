@@ -3,11 +3,12 @@ var DicePage = function (value) {
 
 
 
-
+    //Kalla på View för att skapa ett arv till View klassen.
     View.call(this);
     this.diceArr = [];
 
 
+    //Lägger på händelsehanterare på window för att ta in rörelser från mobilen, skapar ett threshhold och kallar på en funktion vid "skakning"
     m_this = this;
     window.addEventListener("devicemotion", function (event) {
 
@@ -21,6 +22,7 @@ var DicePage = function (value) {
     });
 
 
+    //skapar en tillbaka knapp som tar användaren tillbaka till sidan för att välja tärningar.
     this.button = document.createElement("button");
     this.button.setAttribute("id", "backBtn");
     this.viewContainer.appendChild(this.button);
@@ -30,7 +32,7 @@ var DicePage = function (value) {
 
 
 
-
+    //Skapar div element som ska hålla tärnningarna och skapar sedan tärningar och lägger in i elementen.
     this.positionArray = [];
     for (i = 1; i < 7; i++) {
         this.diceHolder = document.createElement("div");
@@ -46,7 +48,7 @@ var DicePage = function (value) {
         dice.roll();
     }
 
-
+    //Funktion som kallas på vid skakning för att ge alla tärningar nya värden och snurra dem.
     this.diceRoll = function () {
         do {
             this.diceArr[i];
