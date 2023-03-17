@@ -8,7 +8,7 @@ var StartPage = function (buttonText) {
 
   this.button = document.createElement("button");
   this.button.setAttribute("id", "startBtn");
-  this.button.textContent = "Tryck på mig";
+  this.button.textContent = "Tryck på madsig";
   this.viewContainer.appendChild(this.button);
   this.button.addEventListener("click", Permission.givePermission);
 
